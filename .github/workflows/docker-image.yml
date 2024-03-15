@@ -13,8 +13,6 @@ jobs:  # workflow中的job
   push_to_registry:  # job的名字
     name: Docker image to Docker Hub
     runs-on: ubuntu-latest   # job运行的基础环境
-
-
     steps:  # 一个job由一个或多个step组成
       - name: Check out the repo
         uses: actions/checkout@v2   # 官方的action，获取代码
